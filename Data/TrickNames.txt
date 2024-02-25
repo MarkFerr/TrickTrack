@@ -1,0 +1,30 @@
+Ollie, ollie
+Kickflip, kickflip
+Heelflip, heelflip
+BS Pop Shove-It, bs pop shove-it
+FS Pop Shove-It, fs pop shove-it
+FS 180, fs 180
+BS 180, bs 180
+BS Bigspin, bs bigspin
+FS Bigspin, fs bigspin
+Varial Kickflip, varial kickflip
+Varial Heelflip, varial heelflip
+Bigflip, bigflip
+Bigheel, bigheel
+Hardflip, hardflip
+Inward Heelflip, inward heelflip
+360 BS Shove-It, 360 bs shove-it
+360 FS Shove-It, 360 fs shove-it
+360 Flip, 360 flip
+Laser Flip, laser flip
+Pressure Flip, pressure flip
+Casper Flip, casper flip
+Ghetto Bird, ghetto bird
+Forward Flip, forward flip
+Hospital Flip, hospital flip
+Nightmare Flip, nightmare flip
+Impossible, impossible
+Front Foot Impossible, front foot impossible
+Gazelle Flip, gazelle flip
+360 Hardflip, 360 hardflip
+360 Inward Heelflip, 360 inward heelflip
