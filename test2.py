@@ -58,14 +58,6 @@ def getSensorvalues():  #TODO make pickle/msgpack or json from data
     values = np.array([acc,gro,mag])
     log.info("Sensor Values: ", values)
     return values
-    #acc = tuple(round(value, 2) for value in acc)
-    #gro = tuple(round(value, 2) for value in gro)
-    #mag = tuple(round(value, 2) for value in mag)
-    #ahrs.update_no_magnetometer(np.array(gro),np.array(acc), 1/100)
-    #euler = ahrs.quaternion.to_euler()
-    #rounded_euler = tuple(float(round(value, 2)) for value in euler)
-    #return rounded_euler
-    #ONTO something here!!! TODO check orientation with Anroid app!!!
 
 def wait_for_header():
     while True: #receiving messages
@@ -149,8 +141,21 @@ while True: #receiving messages
 
     except Exception as e:
         print("Error:", e)
-        break
+        client_socket.close()
+        server_socket.close()
+        #break
+        server_socket = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+        port = 1
+
+        server_socket.bind(("", port))
+        server_socket.listen(1)
+
+        print("Waiting for connection on RFCOMM channel", port)
+
+        client_socket, address = server_socket.accept()
+        print("Accepted connection from", address)
+
+
 
 client_socket.close()
 server_socket.close()
-
